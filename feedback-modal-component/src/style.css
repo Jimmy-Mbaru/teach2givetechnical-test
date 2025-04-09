@@ -1,3 +1,4 @@
+/*General Styles for the entire page*/
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #1c1c2e;
@@ -5,7 +6,7 @@ body {
   text-align: center;
   padding-top: 100px;
 }
-
+/*Button styles */
 button {
   cursor: pointer;
   padding: 10px 20px;
@@ -16,7 +17,7 @@ button {
   border-radius: 6px;
   transition: 0.3s;
 }
-
+/*Button hover effect */
 button:hover {
   background-color: #837bff;
 }
@@ -33,11 +34,11 @@ button:hover {
   justify-content: center;
   z-index: 1000;
 }
-
+/* hide modal when not active*/
 .hidden {
   display: none;
 }
-
+/*Modal box */
 .modal-content {
   background: #1f1f38;
   padding: 30px;
@@ -55,7 +56,7 @@ button:hover {
   font-size: 24px;
   cursor: pointer;
 }
-
+/* Conatiner for question snd rating buttons*/
 .rating-scale {
   margin: 20px 0;
   display: flex;
@@ -63,7 +64,7 @@ button:hover {
   align-items: center;
 }
 
-
+/*Wrapper for all rating butttons*/
 .ratings {
   display: flex;
   justify-content: space-between;
@@ -72,7 +73,7 @@ button:hover {
   flex-wrap: nowrap;
 }
 
-
+/*Hover effect for all rating buttons */
 .rating-btn:hover {
   background: #3e3e5e;
 }
@@ -81,6 +82,9 @@ button:hover {
   border-color: #6c63ff;
   background-color: #4e4b8f;
 }
+
+/*Container for cancel and submit buttons*/
+
 
 .actions {
   display: flex;
@@ -93,9 +97,14 @@ button:hover {
   width: 100%;
   max-width: 600px;
 }
+
+
+/*Style for each individual rating button */
 .rating-btn {
   flex: 1;
 }
+
+/*Labels for rating scale i.e not likely, extremely likely */
 .label-row {
   display: flex;
   justify-content: space-between;

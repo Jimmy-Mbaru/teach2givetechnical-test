@@ -1,10 +1,11 @@
 const modal = document.getElementById("modal");
-const openModalBtn = document.getElementById("open-modal-btn");
+const openModalBtn = document.getElementById("open-modal-btn"); //button that opens the modal
 const closeModalBtn = document.getElementById("close-btn");
 const cancelBtn = document.getElementById("cancel-btn");
 const submitBtn = document.getElementById("submit-btn");
-const ratingButtons = document.getElementsByClassName("rating-btn");
+const ratingButtons = document.getElementsByClassName("rating-btn"); //All the 1-10 buttons
 
+// Store the currently selected rating (starts as null)
 let selectedRating = null;
 
 // Open Modal
@@ -35,7 +36,7 @@ Array.from(ratingButtons).forEach((btn) => {
   });
 });
 
-// Submit Feedback
+// Handle submission of Feedback
 submitBtn.addEventListener("click", () => {
   if (selectedRating) {
     alert(`You selected a rating of ${selectedRating}`);
@@ -45,10 +46,10 @@ submitBtn.addEventListener("click", () => {
   }
 });
 
-// Reset Selection
+// Function to clear the current selection
 function clearSelection() {
   Array.from(ratingButtons).forEach((btn) => {
     btn.classList.remove("selected");
   });
-  selectedRating = null;
+  selectedRating = null; //Reset selected rating
 }

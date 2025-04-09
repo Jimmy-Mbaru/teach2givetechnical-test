@@ -4,14 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Feedback Modal</title>
+
+    <!-- Link to external CSS file for styling -->
   <link rel="stylesheet" href="src/style.css" />
 </head>
 <body>
+
+   <!-- Button to open the feedback modal -->
   <button id="open-modal-btn">Give Feedback</button>
 
   <div id="modal" class="modal hidden">
     <div class="modal-content">
       <span class="close-btn" id="close-btn">&times;</span>
+
+       <!-- Main feedback question -->
       <h2>How likely are you to recommend FrontendPro to someone you know?</h2>
       
         <div class="ratings-wrapper">
@@ -23,18 +29,20 @@
               }
             </script>
           </div>
+
+          <!-- Labels beneath the rating buttons -->
           <div class="label-row">
             <span class="label">Not likely at all</span>
             <span class="label">Extremely likely</span>
           </div>
         </div>
-        <div class="actions">
+        <div class="actions">   
           <button id="cancel-btn">Cancel</button>
           <button id="submit-btn">Submit</button>
         </div>
       </div>
       
-
+  <!-- Link to external JavaScript file for interactivity -->
   <script src="src/script.js"></script>
 </body>
 </html>
